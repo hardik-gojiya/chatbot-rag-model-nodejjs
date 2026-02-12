@@ -195,7 +195,12 @@ export async function deleteIds(ids, companyId) {
   }
 }
 
-export async function searchPinecone({ query, agentId, companyId, limit = 10 }) {
+export async function searchPinecone({
+  query,
+  agentId,
+  companyId,
+  limit = 10,
+}) {
   const queryEmbedding = await createEmbedding(query);
   const indexDim = await getIndexDimension();
   const paddedEmbedding = padEmbedding(queryEmbedding, indexDim);
@@ -349,7 +354,7 @@ OUTPUT RULES:
  if visitor send this msg "I would like to speak to a human agent." then you must respond with:
 
 {
-  "answer": "Your request has been received. A human agent will be with you shortly. Is there anything else I can help you with?",
+  "answer": "At header please click on 'Request Human' button to speak to a human agent.",
   "found": true
 }
 
@@ -365,6 +370,7 @@ ${query}
       model: "gemini-2.5-flash",
       contents: [{ role: "user", parts: [{ text: prompt }] }],
     });
+    console.log("Gemini Response:", result);
 
     let rawText = result.candidates?.[0]?.content?.parts?.[0]?.text || "{}";
 

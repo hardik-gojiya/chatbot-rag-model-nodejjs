@@ -94,6 +94,7 @@ app.post("/search", async (req, res) => {
 // Generate Response
 app.post("/generate", async (req, res) => {
   try {
+    console.log("Generate request recieved.");
     const { query, contextChunks, systemPrompt } = req.body;
 
     if (!query || !contextChunks) {
@@ -130,6 +131,14 @@ app.post("/scrape-and-index", async (req, res) => {
       scrapeResult.items.length === 0
     ) {
       return res.status(200).json({ success: true, docs: [] });
+    }
+
+    // Ensure old vectors for this website are removed before indexing new ones
+    try {
+      console.log(`Deleting previous vectors for websiteId=${websiteId}`);
+      await deleteIds([websiteId], companyId);
+    } catch (delErr) {
+      console.warn("Pre-index deletion warning:", delErr?.message || delErr);
     }
 
     console.log(

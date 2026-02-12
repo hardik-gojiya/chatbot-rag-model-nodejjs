@@ -59,7 +59,6 @@ export const webScraperService = async (url) => {
           if (isPDF(request.url)) {
             log.info(`Skipping PDF file: ${request.url}`);
             const pdfData = await parsePDFfromURL(request.url);
-            console.log(pdfData);
 
             if (pdfData.error) {
               log.error(`PDF parse error: ${request.url} - ${pdfData.error}`);
@@ -93,7 +92,6 @@ export const webScraperService = async (url) => {
               url: request.loadedUrl,
               text: plainText,
             });
-            console.log(plainText);
           } else {
             log.warning(`Skipping empty page: ${request.loadedUrl}`);
           }
