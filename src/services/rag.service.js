@@ -2,6 +2,7 @@ import { chunkText } from "../utils/chunkText.js";
 import { createEmbedding } from "./embedding.service.js";
 import { Pinecone } from "@pinecone-database/pinecone";
 import { GoogleGenAI } from "@google/genai";
+import axios from "axios";
 
 const pc = new Pinecone({
   apiKey: process.env.PINECONE_API_KEY,
@@ -191,7 +192,6 @@ export async function deleteIds(ids, companyId) {
     });
   } catch (error) {
     console.error("Error deleting IDs:", error);
-    // Don't throw, just log
   }
 }
 
@@ -248,9 +248,6 @@ export async function generateResponse({ query, contextChunks, systemPrompt }) {
   const selectedChunks =
     strongChunks.length > 0 ? strongChunks.slice(0, 3) : weakChunks.slice(0, 2);
 
-  // if (!filteredChunks.length) {
-  //   return "I'm sorry, I can't help with that. Is there anything else I can assist you with?";
-  // }
 
   const contextText = selectedChunks.map(getChunkText).join("\n\n");
 
@@ -304,6 +301,7 @@ A) Greeting / courtesy (hello, hi, thanks, thank you, goodbye, nice, great, ok, 
 B) Incomplete or unclear question (e.g. "how to", "tell me", "what about this")
 C) Factual question that requires information
 D) Opinion / affirmation (e.g. "that's great", "good score")
+E) If query is plus point or profitable for company then ask visitor to contact company directly.
 
 STEP 1.5: Default Entity Assumption (VERY IMPORTANT)
 If the user message refers to something that normally belongs to a specific person or entity
@@ -370,9 +368,19 @@ ${query}
       model: "gemini-2.5-flash",
       contents: [{ role: "user", parts: [{ text: prompt }] }],
     });
+
+    // const result = await axios.post(
+    //   "http://localhost:5678/webhook-test/37956eda-ff6b-4a79-9282-7a7bed8df9eb",
+    //   {
+    //     prompt,
+    //   },
+    // );
     console.log("Gemini Response:", result);
 
-    let rawText = result.candidates?.[0]?.content?.parts?.[0]?.text || "{}";
+    let rawText =
+      result.candidates?.[0]?.content?.parts?.[0]?.text ||
+      result.response?.candidates?.[0]?.content?.parts?.[0]?.text ||
+      "{}";
 
     // Clean up potential markdown formatting from LLM response
     rawText = rawText
@@ -380,6 +388,7 @@ ${query}
       .replace(/^```\s*/, "")
       .replace(/\s*```$/, "")
       .trim();
+      console.log("Cleaned Text:", rawText);
 
     const parsedAnswer = JSON.parse(rawText) || {
       answer:
@@ -469,5 +478,18 @@ export async function checkRagHealth() {
   } catch (error) {
     console.error("Health Check Failed:", error);
     return { ...health, overall: false, error: error.message };
+  }
+}
+
+export async function agentKnowledgedDelete(agentId, companyId) {
+  try {
+    await pineconeIndex.deleteMany({
+      namespace: String(companyId),
+      filter: { agentId: agentId?.toString?.() || agentId },
+    });
+    return { success: true, message: "Deleted successfully" };
+  } catch (error) {
+    console.error("Error deleting IDs:", error);
+    throw error;
   }
 }

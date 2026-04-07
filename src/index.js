@@ -8,6 +8,7 @@ import {
   deleteIds,
   generateResponse,
   checkRagHealth,
+  agentKnowledgedDelete,
 } from "./services/rag.service.js";
 import { createEmbedding } from "./services/embedding.service.js";
 import { webScraperService } from "./services/webScraper.service.js";
@@ -45,6 +46,7 @@ app.post("/process", async (req, res) => {
   try {
     const { companyId, name, type, agentId, sourceId, content, metadata } =
       req.body;
+    console.log("req.body : ", req.body);
 
     if (!companyId || !content || !sourceId) {
       return res.status(400).json({ error: "Missing required fields" });
@@ -199,6 +201,22 @@ app.post("/delete", async (req, res) => {
     res.status(500).json({ error: error.message });
   }
 });
+
+app.delete(
+  "/delete-knowledge-of-agent/:agentId/:companyId",
+  async (req, res) => {
+    try {
+      const { agentId, companyId } = req.params;
+
+      await agentKnowledgedDelete(agentId, companyId);
+
+      res.json({ success: true, message: "Deleted successfully" });
+    } catch (error) {
+      console.error("Error in /delete-knowledge-of-agent:", error);
+      res.status(500).json({ success: false, error: error.message });
+    }
+  },
+);
 
 // Generate Embedding (Utility)
 app.post("/embed", async (req, res) => {
