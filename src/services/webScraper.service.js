@@ -10,6 +10,8 @@ import path from "path";
 import os from "os";
 import { parsePDFfromURL } from "./parsePDFfromURL.service.js";
 
+process.env.PLAYWRIGHT_BROWSERS_PATH = path.join(process.cwd(), ".playwright-browsers");
+
 export const webScraperService = async (url) => {
   const requestId = uuidv4();
   const tempDir = path.join(os.tmpdir(), `rag-scraper-${requestId}`);
@@ -52,6 +54,16 @@ export const webScraperService = async (url) => {
         maxConcurrency: 1,
         maxRequestsPerCrawl: 10,
         requestHandlerTimeoutSecs: 30,
+        launchContext: {
+          launchOptions: {
+            args: [
+              "--no-sandbox",
+              "--disable-setuid-sandbox",
+              "--disable-dev-shm-usage",
+              "--disable-gpu",
+            ],
+          },
+        },
 
         async requestHandler({ request, page, enqueueLinks, log }) {
           log.info(`Scraping: ${request.url}`);
