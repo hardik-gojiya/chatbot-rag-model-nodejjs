@@ -49,7 +49,7 @@ export const webScraperService = async (url) => {
     const crawler = new PlaywrightCrawler(
       {
         requestQueue,
-        maxConcurrency: 5,
+        maxConcurrency: 1,
         maxRequestsPerCrawl: 10,
         requestHandlerTimeoutSecs: 30,
 
