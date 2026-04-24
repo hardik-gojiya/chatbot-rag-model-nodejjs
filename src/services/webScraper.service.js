@@ -9,6 +9,7 @@ import fs from "fs/promises";
 import path from "path";
 import os from "os";
 import { parsePDFfromURL } from "./parsePDFfromURL.service.js";
+import logger from "../utils/logger.js";
 
 process.env.PLAYWRIGHT_BROWSERS_PATH = path.join(process.cwd(), ".playwright-browsers");
 
@@ -118,7 +119,7 @@ export const webScraperService = async (url) => {
     const { items } = await dataset.getData();
     return { items, pageCount: items.length };
   } catch (error) {
-    console.log("Scraping error:", error);
+    logger.error("Scraping error:", error);
     return null;
   } finally {
     try {
@@ -127,7 +128,7 @@ export const webScraperService = async (url) => {
 
       await fs.rm(tempDir, { recursive: true, force: true });
     } catch (e) {
-      console.error("Cleanup error:", e);
+      logger.error("Cleanup error in webScraperService:", e);
     }
   }
 };

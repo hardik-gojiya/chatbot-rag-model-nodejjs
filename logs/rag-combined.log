@@ -1,0 +1,39 @@
+2026-04-24 14:48:59 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-24 14:51:17 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-24 14:51:28 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-24 14:51:38 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-24 15:04:43 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-24 15:04:45 [[34mdebug[39m]: Detected Pinecone index dimension: 1024
+2026-04-24 15:04:47 [[32minfo[39m]: ::1 - - [24/Apr/2026:09:34:47 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-24 15:04:47 [[32minfo[39m]: Generating AI response
+2026-04-24 15:04:49 [[34mdebug[39m]: Gemini Response:
+2026-04-24 15:04:49 [[34mdebug[39m]: Cleaned Text:
+2026-04-24 15:04:49 [[34mdebug[39m]: Parsed Answer:
+2026-04-24 15:04:49 [[32minfo[39m]: ::1 - - [24/Apr/2026:09:34:49 +0000] "POST /generate HTTP/1.1" 200 235 "-" "axios/1.13.2"
+2026-04-24 15:06:48 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-24 15:06:51 [[32minfo[39m]: ::1 - - [24/Apr/2026:09:36:51 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-24 15:06:51 [[32minfo[39m]: Generating AI response
+2026-04-24 15:06:52 [[34mdebug[39m]: Gemini Response:
+2026-04-24 15:06:52 [[34mdebug[39m]: Cleaned Text:
+2026-04-24 15:06:52 [[34mdebug[39m]: Parsed Answer:
+2026-04-24 15:06:52 [[32minfo[39m]: ::1 - - [24/Apr/2026:09:36:52 +0000] "POST /generate HTTP/1.1" 200 138 "-" "axios/1.13.2"
+2026-04-24 15:15:02 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-24 15:33:07 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-24 15:33:09 [[34mdebug[39m]: Detected Pinecone index dimension: 1024
+2026-04-24 15:33:11 [[32minfo[39m]: ::1 - - [24/Apr/2026:10:03:11 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-24 15:33:11 [[32minfo[39m]: Generating AI response
+2026-04-24 15:33:14 [[31merror[39m]: ApiError: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:367:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:128:20
+2026-04-24 15:33:14 [[32minfo[39m]: ::1 - - [24/Apr/2026:10:03:14 +0000] "POST /generate HTTP/1.1" 200 158 "-" "axios/1.13.2"
+2026-04-24 15:33:28 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-24 15:33:30 [[32minfo[39m]: ::1 - - [24/Apr/2026:10:03:30 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-24 15:33:30 [[32minfo[39m]: Generating AI response
+2026-04-24 15:33:33 [[34mdebug[39m]: Gemini Response:
+2026-04-24 15:33:33 [[34mdebug[39m]: Cleaned Text:
+2026-04-24 15:33:33 [[34mdebug[39m]: Parsed Answer:
+2026-04-24 15:33:33 [[32minfo[39m]: ::1 - - [24/Apr/2026:10:03:33 +0000] "POST /generate HTTP/1.1" 200 232 "-" "axios/1.13.2"

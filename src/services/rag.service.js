@@ -3,6 +3,8 @@ import { createEmbedding } from "./embedding.service.js";
 import { Pinecone } from "@pinecone-database/pinecone";
 import { GoogleGenAI } from "@google/genai";
 import axios from "axios";
+import logger from "../utils/logger.js";
+import { processFile } from "../utils/fileProcessor.js";
 
 const pc = new Pinecone({
   apiKey: process.env.PINECONE_API_KEY,
@@ -18,9 +20,9 @@ async function getIndexDimension() {
   try {
     const description = await pc.describeIndex(PINECONE_INDEX_NAME);
     cachedIndexDimension = description.dimension || 768;
-    console.log(`Detected Pinecone index dimension: ${cachedIndexDimension}`);
+    logger.debug(`Detected Pinecone index dimension: ${cachedIndexDimension}`);
   } catch (error) {
-    console.warn("Failed to describe index, defaulting to 768:", error.message);
+    logger.warn(`Failed to describe index, defaulting to 768: ${error.message}`);
     cachedIndexDimension = 768;
   }
   return cachedIndexDimension;
@@ -84,7 +86,7 @@ ${chunk}
     const embedding = await createEmbedding(enrichedText);
 
     if (!embedding || embedding.length === 0) {
-      console.warn(`Skipping chunk ${i} due to empty embedding.`);
+      logger.warn(`Skipping chunk ${i} due to empty embedding.`);
       continue;
     }
 
@@ -131,6 +133,36 @@ ${chunk}
   return docs;
 }
 
+export async function processFileAndUpsert({
+  companyId,
+  agentId,
+  sourceId,
+  name,
+  filePath,
+  mimeType,
+  metadata = {},
+}) {
+  logger.info(`Processing file for company: ${companyId}, file: ${name}`);
+
+  // 1. Extract text from file
+  const content = await processFile(filePath, mimeType);
+
+  if (!content || content.trim().length === 0) {
+    throw new Error("Empty document content extracted");
+  }
+
+  // 2. Process and Upsert using existing logic
+  return await processAndUpsert({
+    companyId,
+    name,
+    type: "file",
+    agentId,
+    sourceId,
+    content,
+    metadata,
+  });
+}
+
 export async function processScrapedData({
   items,
   companyId,
@@ -143,13 +175,13 @@ export async function processScrapedData({
     const item = items[i];
 
     if (!item.text || !item.text.trim()) {
-      console.warn(
+      logger.warn(
         `Skipping item ${i + 1}/${items.length}: ${item.url} (Empty content)`,
       );
       continue;
     }
 
-    console.log(`Processing item ${i + 1}/${items.length}: ${item.url}`);
+    logger.info(`Processing item ${i + 1}/${items.length}: ${item.url}`);
 
     const docs = await processAndUpsert({
       companyId,
@@ -191,7 +223,7 @@ export async function deleteIds(ids, companyId) {
       filter: { parentId: { $in: ids } },
     });
   } catch (error) {
-    console.error("Error deleting IDs:", error);
+    logger.error("Error deleting IDs from Pinecone:", error);
   }
 }
 
@@ -230,7 +262,7 @@ export async function searchPinecone({
       };
     });
   } catch (error) {
-    console.error("Pinecone Search Error:", error);
+    logger.error("Pinecone Search Error:", error);
     return {
       status: "ERROR",
       chunks: [],
@@ -374,7 +406,7 @@ ${query}
     //     prompt,
     //   },
     // );
-    console.log("Gemini Response:", result);
+    logger.debug("Gemini Response:", result);
 
     let rawText =
       result.candidates?.[0]?.content?.parts?.[0]?.text ||
@@ -387,22 +419,23 @@ ${query}
       .replace(/^```\s*/, "")
       .replace(/\s*```$/, "")
       .trim();
-    console.log("Cleaned Text:", rawText);
+    logger.debug("Cleaned Text:", rawText);
 
     const parsedAnswer = JSON.parse(rawText) || {
       answer:
         "I'm sorry, I can't help with that. Is there anything else I can assist you with?",
       found: false,
     };
-    console.log("Parsed Answer:", parsedAnswer);
+    logger.debug("Parsed Answer:", parsedAnswer);
 
     return parsedAnswer;
   } catch (e) {
-    console.error("Gemini Generation Error:", e);
+    logger.error("Gemini Generation Error:", e);
     return {
       status: "ERROR",
-      answer: "I'm sorry, I'm having trouble generating a response right now. Please try again later.",
-      found: false
+      answer:
+        "I'm sorry, I'm having trouble generating a response right now. Please try again later.",
+      found: false,
     };
   }
 }
@@ -479,7 +512,7 @@ export async function checkRagHealth() {
 
     return health;
   } catch (error) {
-    console.error("Health Check Failed:", error);
+    logger.error("Health Check Failed:", error);
     return { ...health, overall: false, error: error.message };
   }
 }
@@ -492,7 +525,7 @@ export async function agentKnowledgedDelete(agentId, companyId) {
     });
     return { success: true, message: "Deleted successfully" };
   } catch (error) {
-    console.error("Error deleting IDs:", error);
+    logger.error("Error deleting agent knowledge:", error);
     throw error;
   }
 }

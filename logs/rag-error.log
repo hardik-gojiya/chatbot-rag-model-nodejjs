@@ -1,0 +1,7 @@
+2026-04-24 15:33:14 [[31merror[39m]: ApiError: {"error":{"code":503,"message":"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.","status":"UNAVAILABLE"}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:367:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:128:20

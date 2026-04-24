@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "type": "module",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "NODE_ENV=production node src/index.js",
     "dev": "nodemon src/index.js",
     "postinstall": "PLAYWRIGHT_BROWSERS_PATH=./.playwright-browsers npx playwright install chromium"
   },
@@ -13,16 +13,20 @@
     "@google/genai": "^1.39.0",
     "@pinecone-database/pinecone": "^7.0.0",
     "axios": "^1.13.5",
-    "bullmq": "^5.73.0",
+    "compression": "^1.8.1",
     "cors": "^2.8.5",
     "crawlee": "^3.15.3",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "ioredis": "^5.10.1",
+    "express-rate-limit": "^8.4.0",
+    "helmet": "^8.1.0",
+    "mammoth": "^1.12.0",
+    "morgan": "^1.10.1",
     "pdf-parse": "^2.4.5",
-    "pdfjs-dist": "^5.4.624",
     "playwright": "^1.58.1",
-    "uuid": "^13.0.0"
+    "uuid": "^13.0.0",
+    "winston": "^3.19.0",
+    "xlsx": "^0.18.5"
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
