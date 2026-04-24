@@ -248,7 +248,6 @@ export async function generateResponse({ query, contextChunks, systemPrompt }) {
   const selectedChunks =
     strongChunks.length > 0 ? strongChunks.slice(0, 3) : weakChunks.slice(0, 2);
 
-
   const contextText = selectedChunks.map(getChunkText).join("\n\n");
 
   //   const prompt = `
@@ -388,7 +387,7 @@ ${query}
       .replace(/^```\s*/, "")
       .replace(/\s*```$/, "")
       .trim();
-      console.log("Cleaned Text:", rawText);
+    console.log("Cleaned Text:", rawText);
 
     const parsedAnswer = JSON.parse(rawText) || {
       answer:
@@ -400,7 +399,11 @@ ${query}
     return parsedAnswer;
   } catch (e) {
     console.error("Gemini Generation Error:", e);
-    throw e;
+    return {
+      status: "ERROR",
+      answer: "I'm sorry, I'm having trouble generating a response right now. Please try again later.",
+      found: false
+    };
   }
 }
 
