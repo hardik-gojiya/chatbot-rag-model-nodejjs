@@ -3,10 +3,13 @@ import axios from "axios";
 import path from "path";
 import os from "os";
 import { v4 as uuidv4 } from "uuid";
-import pdf from "pdf-parse";
 import mammoth from "mammoth";
 import * as xlsx from "xlsx";
 import logger from "./logger.js";
+import { createRequire } from "module";
+
+const require = createRequire(import.meta.url);
+const pdf = require("pdf-parse");
 
 export const processFile = async (filepath, mimeType) => {
   let content = "";
