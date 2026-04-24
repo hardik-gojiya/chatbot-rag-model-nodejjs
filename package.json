@@ -7,7 +7,7 @@
   "scripts": {
     "start": "NODE_ENV=production node src/index.js",
     "dev": "nodemon src/index.js",
-    "postinstall": "PLAYWRIGHT_BROWSERS_PATH=./.playwright-browsers npx playwright install chromium"
+    "postinstall": "cross-env PLAYWRIGHT_BROWSERS_PATH=./.playwright-browsers npx playwright install chromium"
   },
   "dependencies": {
     "@google/genai": "^1.39.0",
@@ -23,12 +23,14 @@
     "mammoth": "^1.12.0",
     "morgan": "^1.10.1",
     "pdf-parse": "^2.4.5",
+    "pdfjs-dist": "^5.6.205",
     "playwright": "^1.58.1",
     "uuid": "^13.0.0",
     "winston": "^3.19.0",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
+    "cross-env": "^10.1.0",
     "nodemon": "^3.1.11"
   }
 }
