@@ -529,3 +529,13 @@ export async function agentKnowledgedDelete(agentId, companyId) {
     throw error;
   }
 }
+
+export async function purgeCompany(companyId) {
+  try {
+    await pineconeIndex.namespace(String(companyId)).deleteAll();
+    return { success: true, message: "Company purged successfully" };
+  } catch (error) {
+    logger.error("Error purging company knowledge:", error);
+    throw error;
+  }
+}

@@ -19,6 +19,7 @@ import {
   generateResponse,
   checkRagHealth,
   agentKnowledgedDelete,
+  purgeCompany,
 } from "./services/rag.service.js";
 import { createEmbedding } from "./services/embedding.service.js";
 import { webScraperService } from "./services/webScraper.service.js";
@@ -203,6 +204,12 @@ app.delete("/delete-knowledge-of-agent/:agentId/:companyId", catchAsync(async (r
   const { agentId, companyId } = req.params;
   await agentKnowledgedDelete(agentId, companyId);
   res.json({ success: true, message: "Deleted successfully" });
+}));
+
+app.delete("/purge-company/:companyId", catchAsync(async (req, res) => {
+  const { companyId } = req.params;
+  await purgeCompany(companyId);
+  res.json({ success: true, message: "Company purged successfully" });
 }));
 
 // Generate Embedding (Utility)
