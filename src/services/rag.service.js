@@ -22,7 +22,9 @@ async function getIndexDimension() {
     cachedIndexDimension = description.dimension || 768;
     logger.debug(`Detected Pinecone index dimension: ${cachedIndexDimension}`);
   } catch (error) {
-    logger.warn(`Failed to describe index, defaulting to 768: ${error.message}`);
+    logger.warn(
+      `Failed to describe index, defaulting to 768: ${error.message}`,
+    );
     cachedIndexDimension = 768;
   }
   return cachedIndexDimension;
@@ -474,9 +476,9 @@ export async function checkRagHealth() {
       // 2. Check Gemini
       (async () => {
         try {
-          const model = ai.getGenerativeModel({ model: "gemini-2.5-flash" });
           await Promise.race([
-            model.countTokens({
+            ai.models.countTokens({
+              model: "gemini-2.0-flash",
               contents: [{ role: "user", parts: [{ text: "ping" }] }],
             }),
             timeout(HEALTH_TIMEOUT),

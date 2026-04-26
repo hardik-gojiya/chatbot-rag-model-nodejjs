@@ -38,3 +38,907 @@
 2026-04-24 15:33:33 [[34mdebug[39m]: Parsed Answer:
 2026-04-24 15:33:33 [[32minfo[39m]: ::1 - - [24/Apr/2026:10:03:33 +0000] "POST /generate HTTP/1.1" 200 232 "-" "axios/1.13.2"
 2026-04-25 16:51:24 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-25 16:52:44 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 17:49:28 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 17:49:41 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 17:49:43 [[34mdebug[39m]: Detected Pinecone index dimension: 1024
+2026-04-26 17:49:45 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:19:45 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 17:49:45 [[32minfo[39m]: Generating AI response
+2026-04-26 17:49:45 [[31merror[39m]: TypeError: ai.getGenerativeModel is not a function
+    at generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:374:29)
+    at file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:26
+    at file:///D:/coding/project/chat-bot/rag-model/src/utils/catchAsync.js:2:19
+    at Layer.handleRequest (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\layer.js:152:17)
+    at next (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\route.js:117:3)
+    at handle (D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\layer.js:152:17)
+    at D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:295:15
+    at processParams (D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:582:12)
+    at next (D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:291:5)
+    at D:\coding\project\chat-bot\rag-model\node_modules\body-parser\lib\read.js:171:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:228:14)
+    at invokeCallback (D:\coding\project\chat-bot\rag-model\node_modules\raw-body\index.js:238:16)
+    at done (D:\coding\project\chat-bot\rag-model\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\coding\project\chat-bot\rag-model\node_modules\raw-body\index.js:287:7)
+2026-04-26 17:49:45 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:19:45 +0000] "POST /generate HTTP/1.1" 200 158 "-" "axios/1.13.2"
+2026-04-26 17:49:48 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 17:49:51 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:19:51 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 17:49:51 [[32minfo[39m]: Generating AI response
+2026-04-26 17:49:51 [[31merror[39m]: TypeError: ai.getGenerativeModel is not a function
+    at generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:374:29)
+    at file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:26
+    at file:///D:/coding/project/chat-bot/rag-model/src/utils/catchAsync.js:2:19
+    at Layer.handleRequest (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\layer.js:152:17)
+    at next (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\route.js:117:3)
+    at handle (D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\layer.js:152:17)
+    at D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:295:15
+    at processParams (D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:582:12)
+    at next (D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:291:5)
+    at D:\coding\project\chat-bot\rag-model\node_modules\body-parser\lib\read.js:171:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:228:14)
+    at invokeCallback (D:\coding\project\chat-bot\rag-model\node_modules\raw-body\index.js:238:16)
+    at done (D:\coding\project\chat-bot\rag-model\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\coding\project\chat-bot\rag-model\node_modules\raw-body\index.js:287:7)
+2026-04-26 17:49:51 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:19:51 +0000] "POST /generate HTTP/1.1" 200 158 "-" "axios/1.13.2"
+2026-04-26 17:50:21 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 17:51:03 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 17:51:05 [[34mdebug[39m]: Detected Pinecone index dimension: 1024
+2026-04-26 17:51:07 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:21:07 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 17:51:07 [[32minfo[39m]: Generating AI response
+2026-04-26 17:51:07 [[31merror[39m]: ApiError: {"error":{"code":404,"message":"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.","status":"NOT_FOUND"}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:374:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:20
+2026-04-26 17:51:07 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:21:07 +0000] "POST /generate HTTP/1.1" 200 158 "-" "axios/1.13.2"
+2026-04-26 17:51:42 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 17:51:43 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:21:43 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 17:51:43 [[32minfo[39m]: Generating AI response
+2026-04-26 17:51:43 [[31merror[39m]: ApiError: {"error":{"code":404,"message":"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.","status":"NOT_FOUND"}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:374:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:20
+2026-04-26 17:51:43 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:21:43 +0000] "POST /generate HTTP/1.1" 200 158 "-" "axios/1.13.2"
+2026-04-26 17:52:35 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 17:52:41 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 17:52:42 [[34mdebug[39m]: Detected Pinecone index dimension: 1024
+2026-04-26 17:52:44 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:22:44 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 17:52:44 [[32minfo[39m]: Generating AI response
+2026-04-26 17:52:46 [[34mdebug[39m]: Gemini Response:
+2026-04-26 17:52:46 [[34mdebug[39m]: Cleaned Text:
+2026-04-26 17:52:46 [[34mdebug[39m]: Parsed Answer:
+2026-04-26 17:52:46 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:22:46 +0000] "POST /generate HTTP/1.1" 200 235 "-" "axios/1.13.2"
+2026-04-26 17:53:23 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 17:53:31 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:23:31 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 17:53:31 [[32minfo[39m]: Generating AI response
+2026-04-26 17:53:33 [[34mdebug[39m]: Gemini Response:
+2026-04-26 17:53:33 [[34mdebug[39m]: Cleaned Text:
+2026-04-26 17:53:33 [[34mdebug[39m]: Parsed Answer:
+2026-04-26 17:53:33 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:23:33 +0000] "POST /generate HTTP/1.1" 200 89 "-" "axios/1.13.2"
+2026-04-26 17:53:39 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 17:53:44 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:23:44 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 17:53:44 [[32minfo[39m]: Generating AI response
+2026-04-26 17:53:46 [[34mdebug[39m]: Gemini Response:
+2026-04-26 17:53:46 [[34mdebug[39m]: Cleaned Text:
+2026-04-26 17:53:46 [[34mdebug[39m]: Parsed Answer:
+2026-04-26 17:53:46 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:23:46 +0000] "POST /generate HTTP/1.1" 200 156 "-" "axios/1.13.2"
+2026-04-26 17:53:56 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 17:54:02 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 17:54:19 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 17:54:21 [[34mdebug[39m]: Detected Pinecone index dimension: 1024
+2026-04-26 17:54:23 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:24:23 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 17:54:23 [[32minfo[39m]: Generating AI response
+2026-04-26 17:54:23 [[31merror[39m]: ApiError: {"error":{"code":404,"message":"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.","status":"NOT_FOUND"}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:374:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:20
+2026-04-26 17:54:23 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:24:23 +0000] "POST /generate HTTP/1.1" 200 158 "-" "axios/1.13.2"
+2026-04-26 17:54:32 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 17:55:05 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 17:55:07 [[34mdebug[39m]: Detected Pinecone index dimension: 1024
+2026-04-26 17:55:09 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:25:09 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 17:55:09 [[32minfo[39m]: Generating AI response
+2026-04-26 17:55:11 [[34mdebug[39m]: Gemini Response:
+2026-04-26 17:55:11 [[34mdebug[39m]: Cleaned Text:
+2026-04-26 17:55:11 [[34mdebug[39m]: Parsed Answer:
+2026-04-26 17:55:11 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:25:11 +0000] "POST /generate HTTP/1.1" 200 219 "-" "axios/1.13.2"
+2026-04-26 17:55:17 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 17:55:20 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:25:20 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 17:55:20 [[32minfo[39m]: Generating AI response
+2026-04-26 17:55:23 [[34mdebug[39m]: Gemini Response:
+2026-04-26 17:55:23 [[34mdebug[39m]: Cleaned Text:
+2026-04-26 17:55:23 [[34mdebug[39m]: Parsed Answer:
+2026-04-26 17:55:23 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:25:23 +0000] "POST /generate HTTP/1.1" 200 217 "-" "axios/1.13.2"
+2026-04-26 17:57:49 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 17:57:49 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: sample_poster.pdf
+2026-04-26 17:57:49 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777206469/documents/xfioawyoowucnqzujgiz.pdf
+2026-04-26 17:57:50 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 17:57:50 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 17:57:50 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:27:50 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 17:57:55 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 17:57:55 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: sample_poster.pdf
+2026-04-26 17:57:55 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777206469/documents/xfioawyoowucnqzujgiz.pdf
+2026-04-26 17:57:56 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 17:57:56 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 17:57:56 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:27:56 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 17:58:10 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 17:58:44 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 17:58:50 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 17:59:48 [[31merror[39m]: PineconeConnectionError: Request failed to reach Pinecone. This can occur for reasons such as network problems that prevent the request from being completed, or a Pinecone API outage. Check your network connection, and visit https://status.pinecone.io/ to see whether any outages are ongoing.
+    at handleApiError (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\errors\handling.js:32:16)
+    at Object.onError (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\utils\middleware.js:87:63)
+    at VectorOperationsApi.fetchApi (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\pinecone-generated-ts-fetch\db_data\runtime.js:180:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async VectorOperationsApi.request (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\pinecone-generated-ts-fetch\db_data\runtime.js:113:26)
+    at async VectorOperationsApi.deleteVectorsRaw (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\pinecone-generated-ts-fetch\db_data\apis\VectorOperationsApi.js:66:26)
+    at async VectorOperationsApi.deleteVectors (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\pinecone-generated-ts-fetch\db_data\apis\VectorOperationsApi.js:80:26)
+    at async Index._deleteMany (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\data\vectors\deleteMany.js:36:9)
+    at async deleteIds (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:233:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:199:3
+2026-04-26 17:59:48 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:29:48 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 18:00:07 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:00:07 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: sample_poster.pdf
+2026-04-26 18:00:07 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777206607/documents/donxdrxyezst11wnofjf.pdf
+2026-04-26 18:00:08 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:00:08 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:00:08 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:30:08 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:00:13 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:00:13 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: sample_poster.pdf
+2026-04-26 18:00:13 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777206607/documents/donxdrxyezst11wnofjf.pdf
+2026-04-26 18:00:14 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:00:14 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:00:14 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:30:14 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:00:24 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:00:24 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: sample_poster.pdf
+2026-04-26 18:00:24 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777206607/documents/donxdrxyezst11wnofjf.pdf
+2026-04-26 18:00:24 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:00:24 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:00:24 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:30:24 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:01:00 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:01:56 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:02:51 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:02:51 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: sample_poster.pdf
+2026-04-26 18:02:51 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777206771/documents/bc12ldmhzwn5jcknc0jq.pdf
+2026-04-26 18:02:51 [[32minfo[39m]: Using Cloudinary SDK for authenticated download...
+2026-04-26 18:03:02 [[33mwarn[39m]: Cloudinary SDK approach failed: Request failed with status code 401. Falling back to direct axios with headers.
+2026-04-26 18:03:02 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:03:02 [[31merror[39m]: Response data: 
+2026-04-26 18:03:02 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:03:02 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:72:30
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:47:11)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:03:02 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:33:02 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:03:07 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:03:07 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: sample_poster.pdf
+2026-04-26 18:03:07 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777206771/documents/bc12ldmhzwn5jcknc0jq.pdf
+2026-04-26 18:03:07 [[32minfo[39m]: Using Cloudinary SDK for authenticated download...
+2026-04-26 18:03:17 [[33mwarn[39m]: Cloudinary SDK approach failed: Request failed with status code 401. Falling back to direct axios with headers.
+2026-04-26 18:03:17 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:03:17 [[31merror[39m]: Response data: 
+2026-04-26 18:03:17 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:03:17 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:72:30
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:47:11)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:03:17 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:33:17 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:03:28 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:03:28 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: sample_poster.pdf
+2026-04-26 18:03:28 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777206771/documents/bc12ldmhzwn5jcknc0jq.pdf
+2026-04-26 18:03:28 [[32minfo[39m]: Using Cloudinary SDK for authenticated download...
+2026-04-26 18:03:46 [[33mwarn[39m]: Cloudinary SDK approach failed: Request failed with status code 401. Falling back to direct axios with headers.
+2026-04-26 18:03:46 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:03:46 [[31merror[39m]: Response data: 
+2026-04-26 18:03:46 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:03:46 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:72:30
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:47:11)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:03:46 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:33:46 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:04:33 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:04:58 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:34:58 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 18:04:58 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:34:58 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 18:05:10 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:05:10 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:05:10 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777206910/documents/nzfjyvjx8a5rtqgq5ejn.pdf
+2026-04-26 18:05:10 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:05:10 [[32minfo[39m]: Signed URL generated. Attempting download...
+2026-04-26 18:05:11 [[33mwarn[39m]: Signed URL download failed: Request failed with status code 404. Falling back to original URL.
+2026-04-26 18:05:11 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:05:11 [[31merror[39m]: Response data: 
+2026-04-26 18:05:11 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:05:11 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:69:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:05:11 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:35:11 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:05:17 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:05:17 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:05:17 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777206910/documents/nzfjyvjx8a5rtqgq5ejn.pdf
+2026-04-26 18:05:17 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:05:17 [[32minfo[39m]: Signed URL generated. Attempting download...
+2026-04-26 18:05:17 [[33mwarn[39m]: Signed URL download failed: Request failed with status code 404. Falling back to original URL.
+2026-04-26 18:05:18 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:05:18 [[31merror[39m]: Response data: 
+2026-04-26 18:05:18 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:05:18 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:69:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:05:18 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:35:18 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:05:28 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:05:28 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:05:28 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777206910/documents/nzfjyvjx8a5rtqgq5ejn.pdf
+2026-04-26 18:05:28 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:05:28 [[32minfo[39m]: Signed URL generated. Attempting download...
+2026-04-26 18:05:28 [[33mwarn[39m]: Signed URL download failed: Request failed with status code 404. Falling back to original URL.
+2026-04-26 18:05:28 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:05:28 [[31merror[39m]: Response data: 
+2026-04-26 18:05:28 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:05:28 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:69:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:05:28 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:35:28 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:05:59 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:06:05 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:11:04 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:12:43 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:12:43 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: Attendance Report Format.pdf
+2026-04-26 18:12:43 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777207363/documents/qxbypycwcyci5rg42okj.pdf
+2026-04-26 18:12:43 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:12:43 [[32minfo[39m]: Signed URL generated: https://res.cloudinary.com/desd2phid/image/upload/s--a4EDnfH2--/v1/documents/qxbypycwcyci5rg42okj.pdf?_a=BAMAPqWQ0. Attempting download...
+2026-04-26 18:12:44 [[33mwarn[39m]: Signed URL download failed: Request failed with status code 401. Falling back to original URL.
+2026-04-26 18:12:45 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:12:45 [[31merror[39m]: Response data: 
+2026-04-26 18:12:45 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:12:45 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:75:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:12:45 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:42:45 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:12:51 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:12:51 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: Attendance Report Format.pdf
+2026-04-26 18:12:51 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777207363/documents/qxbypycwcyci5rg42okj.pdf
+2026-04-26 18:12:51 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:12:51 [[32minfo[39m]: Signed URL generated: https://res.cloudinary.com/desd2phid/image/upload/s--a4EDnfH2--/v1/documents/qxbypycwcyci5rg42okj.pdf?_a=BAMAPqWQ0. Attempting download...
+2026-04-26 18:12:52 [[33mwarn[39m]: Signed URL download failed: Request failed with status code 401. Falling back to original URL.
+2026-04-26 18:12:52 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:12:52 [[31merror[39m]: Response data: 
+2026-04-26 18:12:52 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:12:52 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:75:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:12:52 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:42:52 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:13:03 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:13:03 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: Attendance Report Format.pdf
+2026-04-26 18:13:03 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777207363/documents/qxbypycwcyci5rg42okj.pdf
+2026-04-26 18:13:03 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:13:03 [[32minfo[39m]: Signed URL generated: https://res.cloudinary.com/desd2phid/image/upload/s--a4EDnfH2--/v1/documents/qxbypycwcyci5rg42okj.pdf?_a=BAMAPqWQ0. Attempting download...
+2026-04-26 18:13:03 [[33mwarn[39m]: Signed URL download failed: Request failed with status code 401. Falling back to original URL.
+2026-04-26 18:13:03 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:13:03 [[31merror[39m]: Response data: 
+2026-04-26 18:13:03 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:13:03 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:75:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:13:03 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:43:03 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:13:30 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:13:51 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:14:20 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:14:47 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:14:47 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:14:47 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777207487/documents/d9wkqiw3vu2xcqhtsq1x.pdf
+2026-04-26 18:14:47 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:14:47 [[32minfo[39m]: Generated signed Cloudinary URL: https://res.cloudinary.com/desd2phid/image/upload/s--QHO3Md7l--/v1/documents/d9wkqiw3vu2xcqhtsq1x.pdf?_a=BAMAPqWQ0
+2026-04-26 18:14:48 [[33mwarn[39m]: Signed URL download failed (401). Falling back to original URL.
+2026-04-26 18:14:49 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:14:49 [[31merror[39m]: Response data: 
+2026-04-26 18:14:49 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:14:49 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:84:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:14:49 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:44:49 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:14:54 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:14:54 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:14:54 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777207487/documents/d9wkqiw3vu2xcqhtsq1x.pdf
+2026-04-26 18:14:54 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:14:54 [[32minfo[39m]: Generated signed Cloudinary URL: https://res.cloudinary.com/desd2phid/image/upload/s--QHO3Md7l--/v1/documents/d9wkqiw3vu2xcqhtsq1x.pdf?_a=BAMAPqWQ0
+2026-04-26 18:14:55 [[33mwarn[39m]: Signed URL download failed (401). Falling back to original URL.
+2026-04-26 18:14:55 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:14:55 [[31merror[39m]: Response data: 
+2026-04-26 18:14:55 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:14:55 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:84:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:14:55 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:44:55 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:15:05 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:15:05 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:15:05 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777207487/documents/d9wkqiw3vu2xcqhtsq1x.pdf
+2026-04-26 18:15:05 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:15:05 [[32minfo[39m]: Generated signed Cloudinary URL: https://res.cloudinary.com/desd2phid/image/upload/s--QHO3Md7l--/v1/documents/d9wkqiw3vu2xcqhtsq1x.pdf?_a=BAMAPqWQ0
+2026-04-26 18:15:06 [[33mwarn[39m]: Signed URL download failed (401). Falling back to original URL.
+2026-04-26 18:15:06 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:15:06 [[31merror[39m]: Response data: 
+2026-04-26 18:15:06 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:15:06 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:84:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:15:06 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:45:06 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:16:06 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:16:45 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:16:45 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:16:45 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777207603/documents/brwoqqczn3us96xgvagp.pdf
+2026-04-26 18:16:45 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:16:45 [[32minfo[39m]: Generated signed Cloudinary URL: https://res.cloudinary.com/desd2phid/image/upload/s--ccgjr3pg--/v1777207603/documents/brwoqqczn3us96xgvagp.pdf?_a=BAMAPqWQ0
+2026-04-26 18:16:47 [[33mwarn[39m]: Signed URL download failed (401). Falling back to original URL.
+2026-04-26 18:16:47 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:16:47 [[31merror[39m]: Response data: 
+2026-04-26 18:16:47 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:16:47 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:93:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:16:47 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:46:47 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:16:52 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:16:52 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:16:52 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777207603/documents/brwoqqczn3us96xgvagp.pdf
+2026-04-26 18:16:52 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:16:52 [[32minfo[39m]: Generated signed Cloudinary URL: https://res.cloudinary.com/desd2phid/image/upload/s--ccgjr3pg--/v1777207603/documents/brwoqqczn3us96xgvagp.pdf?_a=BAMAPqWQ0
+2026-04-26 18:16:53 [[33mwarn[39m]: Signed URL download failed (401). Falling back to original URL.
+2026-04-26 18:16:53 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:16:53 [[31merror[39m]: Response data: 
+2026-04-26 18:16:53 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:16:53 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:93:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:16:53 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:46:53 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:17:04 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:17:04 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:17:04 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777207603/documents/brwoqqczn3us96xgvagp.pdf
+2026-04-26 18:17:04 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:17:04 [[32minfo[39m]: Generated signed Cloudinary URL: https://res.cloudinary.com/desd2phid/image/upload/s--ccgjr3pg--/v1777207603/documents/brwoqqczn3us96xgvagp.pdf?_a=BAMAPqWQ0
+2026-04-26 18:17:05 [[33mwarn[39m]: Signed URL download failed (401). Falling back to original URL.
+2026-04-26 18:17:05 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:17:05 [[31merror[39m]: Response data: 
+2026-04-26 18:17:05 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:17:05 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:93:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:17:05 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:47:05 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:17:16 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:18:55 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:18:55 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: HHM_210430116026 - Yash Raiyani.pdf
+2026-04-26 18:18:55 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777207716/documents/dseovadsxer3kgybge4h.pdf
+2026-04-26 18:18:55 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:18:56 [[33mwarn[39m]: Basic Auth download failed (401). Trying signed URL...
+2026-04-26 18:18:57 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:18:57 [[31merror[39m]: Response data: 
+2026-04-26 18:18:57 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:18:57 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:96:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:18:57 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:48:57 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:19:02 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:19:02 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: HHM_210430116026 - Yash Raiyani.pdf
+2026-04-26 18:19:02 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777207716/documents/dseovadsxer3kgybge4h.pdf
+2026-04-26 18:19:02 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:19:03 [[33mwarn[39m]: Basic Auth download failed (401). Trying signed URL...
+2026-04-26 18:19:03 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:19:03 [[31merror[39m]: Response data: 
+2026-04-26 18:19:03 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:19:03 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:96:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:19:03 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:49:03 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:19:13 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:19:13 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: HHM_210430116026 - Yash Raiyani.pdf
+2026-04-26 18:19:13 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777207716/documents/dseovadsxer3kgybge4h.pdf
+2026-04-26 18:19:13 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:19:14 [[33mwarn[39m]: Basic Auth download failed (401). Trying signed URL...
+2026-04-26 18:19:14 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:19:14 [[31merror[39m]: Response data: 
+2026-04-26 18:19:14 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:19:14 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:96:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:19:14 [[32minfo[39m]: ::1 - - [26/Apr/2026:12:49:14 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:36:54 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:06:54 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 18:36:55 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:06:55 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 18:36:56 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:06:56 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 18:36:58 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:06:58 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 18:37:00 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:07:00 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 18:37:28 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:07:28 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 18:37:59 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:37:59 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:37:59 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777208872/documents/lt4x7h2ssiqj57i3fhfc.pdf
+2026-04-26 18:37:59 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:38:00 [[33mwarn[39m]: Basic Auth download failed (401). Trying signed URL...
+2026-04-26 18:38:01 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:38:01 [[31merror[39m]: Response data: 
+2026-04-26 18:38:01 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:38:01 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:96:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:38:01 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:08:01 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:38:11 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:38:11 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:38:11 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777208872/documents/lt4x7h2ssiqj57i3fhfc.pdf
+2026-04-26 18:38:11 [[32minfo[39m]: Generating signed Cloudinary URL for authenticated download...
+2026-04-26 18:38:12 [[33mwarn[39m]: Basic Auth download failed (401). Trying signed URL...
+2026-04-26 18:38:12 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:38:12 [[31merror[39m]: Response data: 
+2026-04-26 18:38:12 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:38:12 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:96:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:38:12 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:08:12 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:44:55 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:46:53 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:46:53 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:16:53 +0000] "POST /process-file HTTP/1.1" 400 35 "-" "axios/1.13.2"
+2026-04-26 18:47:18 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:47:18 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:47:18 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777209439/documents/jqtreowy1xnnaofacriy.pdf
+2026-04-26 18:47:19 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:47:19 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:47:19 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:17:19 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:47:25 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:47:25 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:47:25 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777209439/documents/jqtreowy1xnnaofacriy.pdf
+2026-04-26 18:47:25 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:47:25 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:47:25 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:17:25 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:47:34 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:47:34 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:17:34 +0000] "POST /process-file HTTP/1.1" 400 35 "-" "axios/1.13.2"
+2026-04-26 18:47:36 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:47:36 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:47:36 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777209439/documents/jqtreowy1xnnaofacriy.pdf
+2026-04-26 18:47:36 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:47:36 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:47:36 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:17:36 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:48:54 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:48:54 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:18:54 +0000] "POST /process-file HTTP/1.1" 400 35 "-" "axios/1.13.2"
+2026-04-26 18:51:36 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:51:36 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:51:36 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777209696/documents/eado4k1ujnr0iefjgnpu.pdf
+2026-04-26 18:51:37 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:51:37 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:51:37 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:21:37 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:51:42 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:51:42 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:51:42 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777209696/documents/eado4k1ujnr0iefjgnpu.pdf
+2026-04-26 18:51:43 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:51:43 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:51:43 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:21:43 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:51:53 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:51:53 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:51:53 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777209696/documents/eado4k1ujnr0iefjgnpu.pdf
+2026-04-26 18:51:54 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:51:54 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:51:54 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:21:54 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:57:08 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 18:57:59 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:57:59 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:57:59 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777210079/documents/vyoxpkiykelwunvlrnei.pdf
+2026-04-26 18:58:00 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:58:00 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:58:00 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:28:00 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:58:05 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:58:05 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:58:05 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777210079/documents/vyoxpkiykelwunvlrnei.pdf
+2026-04-26 18:58:06 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:58:06 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:58:06 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:28:06 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:58:16 [[32minfo[39m]: Processing file knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:58:16 [[32minfo[39m]: Processing file for company: 69692bc5189c6e882bb58967, file: àªªàª°àª¿àªªàª¤à«àª°-ANNUAL DAY_2026.pdf
+2026-04-26 18:58:16 [[32minfo[39m]: Downloading file from: https://res.cloudinary.com/desd2phid/image/upload/v1777210079/documents/vyoxpkiykelwunvlrnei.pdf
+2026-04-26 18:58:17 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:58:17 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:58:17 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:28:17 +0000] "POST /process-file HTTP/1.1" 500 62 "-" "axios/1.13.2"
+2026-04-26 18:59:24 [[32minfo[39m]: Processing knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 18:59:26 [[34mdebug[39m]: Detected Pinecone index dimension: 1024
+2026-04-26 18:59:32 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:29:32 +0000] "POST /process HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 19:00:18 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:30:18 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 19:00:19 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:30:19 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 19:00:23 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:30:23 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 19:00:24 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:30:24 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 19:00:26 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:30:26 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 19:00:52 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:30:52 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 19:02:59 [[32minfo[39m]: Processing knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 19:03:01 [[32minfo[39m]: ::1 - - [26/Apr/2026:13:33:01 +0000] "POST /process HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 23:15:00 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 23:16:41 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 23:16:43 [[34mdebug[39m]: Detected Pinecone index dimension: 1024
+2026-04-26 23:16:45 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:46:45 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 23:16:45 [[32minfo[39m]: Generating AI response
+2026-04-26 23:16:45 [[31merror[39m]: ApiError: {"error":{"code":404,"message":"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.","status":"NOT_FOUND"}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:400:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:20
+2026-04-26 23:16:45 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:46:45 +0000] "POST /generate HTTP/1.1" 200 158 "-" "axios/1.13.2"
+2026-04-26 23:18:57 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+{"level":"info","message":"RAG Service running on port 3001 in production mode","timestamp":"2026-04-26 23:19:10"}
+2026-04-26 23:20:30 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:50:30 +0000] "GET /rag/available HTTP/1.1" 200 4 "-" "Mozilla/5.0 (Windows NT; Windows NT 10.0; en-IN) WindowsPowerShell/5.1.26100.8115"
+2026-04-26 23:21:01 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 23:21:03 [[34mdebug[39m]: Detected Pinecone index dimension: 1024
+2026-04-26 23:21:06 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:51:06 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 23:21:06 [[32minfo[39m]: Generating AI response
+2026-04-26 23:21:06 [[31merror[39m]: ApiError: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 53.513573334s.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"53s"}]}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:400:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:20
+2026-04-26 23:21:06 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:51:06 +0000] "POST /generate HTTP/1.1" 200 158 "-" "axios/1.13.2"
+2026-04-26 23:22:34 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 23:22:39 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 23:22:41 [[34mdebug[39m]: Detected Pinecone index dimension: 1024
+2026-04-26 23:22:42 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:52:42 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 23:22:42 [[32minfo[39m]: Generating AI response
+2026-04-26 23:22:43 [[31merror[39m]: ApiError: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 16.976990532s.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.0-flash","location":"global"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"16s"}]}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:400:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:20
+2026-04-26 23:22:43 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:52:43 +0000] "POST /generate HTTP/1.1" 200 158 "-" "axios/1.13.2"
+2026-04-26 23:23:05 [[32minfo[39m]: RAG Service running on port 3001 in development mode
+2026-04-26 23:23:08 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 23:23:10 [[34mdebug[39m]: Detected Pinecone index dimension: 1024
+2026-04-26 23:23:12 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:53:12 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 23:23:12 [[32minfo[39m]: Generating AI response
+2026-04-26 23:23:14 [[34mdebug[39m]: Gemini Response:
+2026-04-26 23:23:14 [[34mdebug[39m]: Cleaned Text:
+2026-04-26 23:23:14 [[34mdebug[39m]: Parsed Answer:
+2026-04-26 23:23:14 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:53:14 +0000] "POST /generate HTTP/1.1" 200 135 "-" "axios/1.13.2"
+2026-04-26 23:26:39 [[32minfo[39m]: Processing knowledge for company: 69692bc5189c6e882bb58967
+2026-04-26 23:26:48 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:56:48 +0000] "POST /process HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 23:27:46 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 23:27:48 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:57:48 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 23:27:48 [[32minfo[39m]: Generating AI response
+2026-04-26 23:27:56 [[34mdebug[39m]: Gemini Response:
+2026-04-26 23:27:56 [[34mdebug[39m]: Cleaned Text:
+2026-04-26 23:27:56 [[34mdebug[39m]: Parsed Answer:
+2026-04-26 23:27:56 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:57:56 +0000] "POST /generate HTTP/1.1" 200 93 "-" "axios/1.13.2"
+2026-04-26 23:28:11 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 23:28:16 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:58:16 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 23:28:16 [[32minfo[39m]: Generating AI response
+2026-04-26 23:28:28 [[34mdebug[39m]: Gemini Response:
+2026-04-26 23:28:28 [[34mdebug[39m]: Cleaned Text:
+2026-04-26 23:28:28 [[34mdebug[39m]: Parsed Answer:
+2026-04-26 23:28:28 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:58:28 +0000] "POST /generate HTTP/1.1" 200 158 "-" "axios/1.13.2"
+2026-04-26 23:29:08 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:59:08 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 23:29:24 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 23:29:26 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:59:26 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 23:29:26 [[32minfo[39m]: Generating AI response
+2026-04-26 23:29:30 [[34mdebug[39m]: Gemini Response:
+2026-04-26 23:29:30 [[34mdebug[39m]: Cleaned Text:
+2026-04-26 23:29:30 [[34mdebug[39m]: Parsed Answer:
+2026-04-26 23:29:30 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:59:30 +0000] "POST /generate HTTP/1.1" 200 102 "-" "axios/1.13.2"
+2026-04-26 23:29:41 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 23:29:43 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:59:43 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 23:29:43 [[32minfo[39m]: Generating AI response
+2026-04-26 23:29:48 [[32minfo[39m]: Search request for company: 69692bc5189c6e882bb58967
+2026-04-26 23:29:50 [[34mdebug[39m]: Gemini Response:
+2026-04-26 23:29:50 [[34mdebug[39m]: Cleaned Text:
+2026-04-26 23:29:50 [[34mdebug[39m]: Parsed Answer:
+2026-04-26 23:29:50 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:59:50 +0000] "POST /generate HTTP/1.1" 200 88 "-" "axios/1.13.2"
+2026-04-26 23:29:50 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:59:50 +0000] "POST /search HTTP/1.1" 200 - "-" "axios/1.13.2"
+2026-04-26 23:29:50 [[32minfo[39m]: Generating AI response
+2026-04-26 23:29:52 [[34mdebug[39m]: Gemini Response:
+2026-04-26 23:29:52 [[34mdebug[39m]: Cleaned Text:
+2026-04-26 23:29:52 [[34mdebug[39m]: Parsed Answer:
+2026-04-26 23:29:52 [[32minfo[39m]: ::1 - - [26/Apr/2026:17:59:52 +0000] "POST /generate HTTP/1.1" 200 135 "-" "axios/1.13.2"
+2026-04-26 23:33:14 [[32minfo[39m]: ::1 - - [26/Apr/2026:18:03:14 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"
+2026-04-26 23:33:22 [[32minfo[39m]: ::1 - - [26/Apr/2026:18:03:22 +0000] "POST /delete HTTP/1.1" 200 49 "-" "axios/1.13.2"

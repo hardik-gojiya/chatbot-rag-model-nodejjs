@@ -20,7 +20,9 @@ export const processFile = async (filepath, mimeType) => {
     // If filepath is a URL, download it first
     if (filepath.startsWith("http")) {
       logger.info(`Downloading file from: ${filepath}`);
-      const response = await axios.get(filepath, { responseType: "arraybuffer" });
+      const response = await axios.get(filepath, {
+        responseType: "arraybuffer",
+      });
       const tempPath = path.join(os.tmpdir(), `rag-upload-${uuidv4()}`);
       await fs.promises.writeFile(tempPath, response.data);
       localPath = tempPath;

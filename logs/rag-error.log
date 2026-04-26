@@ -5,3 +5,541 @@
     at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
     at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:367:20)
     at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:128:20
+2026-04-26 17:49:45 [[31merror[39m]: TypeError: ai.getGenerativeModel is not a function
+    at generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:374:29)
+    at file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:26
+    at file:///D:/coding/project/chat-bot/rag-model/src/utils/catchAsync.js:2:19
+    at Layer.handleRequest (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\layer.js:152:17)
+    at next (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\route.js:117:3)
+    at handle (D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\layer.js:152:17)
+    at D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:295:15
+    at processParams (D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:582:12)
+    at next (D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:291:5)
+    at D:\coding\project\chat-bot\rag-model\node_modules\body-parser\lib\read.js:171:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:228:14)
+    at invokeCallback (D:\coding\project\chat-bot\rag-model\node_modules\raw-body\index.js:238:16)
+    at done (D:\coding\project\chat-bot\rag-model\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\coding\project\chat-bot\rag-model\node_modules\raw-body\index.js:287:7)
+2026-04-26 17:49:51 [[31merror[39m]: TypeError: ai.getGenerativeModel is not a function
+    at generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:374:29)
+    at file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:26
+    at file:///D:/coding/project/chat-bot/rag-model/src/utils/catchAsync.js:2:19
+    at Layer.handleRequest (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\layer.js:152:17)
+    at next (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\route.js:157:13)
+    at Route.dispatch (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\route.js:117:3)
+    at handle (D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:435:11)
+    at Layer.handleRequest (D:\coding\project\chat-bot\rag-model\node_modules\router\lib\layer.js:152:17)
+    at D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:295:15
+    at processParams (D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:582:12)
+    at next (D:\coding\project\chat-bot\rag-model\node_modules\router\index.js:291:5)
+    at D:\coding\project\chat-bot\rag-model\node_modules\body-parser\lib\read.js:171:5
+    at AsyncResource.runInAsyncScope (node:async_hooks:228:14)
+    at invokeCallback (D:\coding\project\chat-bot\rag-model\node_modules\raw-body\index.js:238:16)
+    at done (D:\coding\project\chat-bot\rag-model\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (D:\coding\project\chat-bot\rag-model\node_modules\raw-body\index.js:287:7)
+2026-04-26 17:51:07 [[31merror[39m]: ApiError: {"error":{"code":404,"message":"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.","status":"NOT_FOUND"}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:374:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:20
+2026-04-26 17:51:43 [[31merror[39m]: ApiError: {"error":{"code":404,"message":"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.","status":"NOT_FOUND"}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:374:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:20
+2026-04-26 17:54:23 [[31merror[39m]: ApiError: {"error":{"code":404,"message":"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.","status":"NOT_FOUND"}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:374:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:20
+2026-04-26 17:57:50 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 17:57:50 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 17:57:56 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 17:57:56 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 17:59:48 [[31merror[39m]: PineconeConnectionError: Request failed to reach Pinecone. This can occur for reasons such as network problems that prevent the request from being completed, or a Pinecone API outage. Check your network connection, and visit https://status.pinecone.io/ to see whether any outages are ongoing.
+    at handleApiError (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\errors\handling.js:32:16)
+    at Object.onError (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\utils\middleware.js:87:63)
+    at VectorOperationsApi.fetchApi (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\pinecone-generated-ts-fetch\db_data\runtime.js:180:49)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async VectorOperationsApi.request (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\pinecone-generated-ts-fetch\db_data\runtime.js:113:26)
+    at async VectorOperationsApi.deleteVectorsRaw (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\pinecone-generated-ts-fetch\db_data\apis\VectorOperationsApi.js:66:26)
+    at async VectorOperationsApi.deleteVectors (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\pinecone-generated-ts-fetch\db_data\apis\VectorOperationsApi.js:80:26)
+    at async Index._deleteMany (D:\coding\project\chat-bot\rag-model\node_modules\@pinecone-database\pinecone\dist\data\vectors\deleteMany.js:36:9)
+    at async deleteIds (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:233:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:199:3
+2026-04-26 18:00:08 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:00:08 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:00:14 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:00:14 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:00:24 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:00:24 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:03:02 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:03:02 [[31merror[39m]: Response data: 
+2026-04-26 18:03:02 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:03:02 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:72:30
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:47:11)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:03:17 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:03:17 [[31merror[39m]: Response data: 
+2026-04-26 18:03:17 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:03:17 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:72:30
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:47:11)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:03:46 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:03:46 [[31merror[39m]: Response data: 
+2026-04-26 18:03:46 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:03:46 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:72:30
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:47:11)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:05:11 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:05:11 [[31merror[39m]: Response data: 
+2026-04-26 18:05:11 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:05:11 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:69:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:05:18 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:05:18 [[31merror[39m]: Response data: 
+2026-04-26 18:05:18 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:05:18 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:69:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:05:28 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:05:28 [[31merror[39m]: Response data: 
+2026-04-26 18:05:28 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:05:28 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:69:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:12:45 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:12:45 [[31merror[39m]: Response data: 
+2026-04-26 18:12:45 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:12:45 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:75:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:12:52 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:12:52 [[31merror[39m]: Response data: 
+2026-04-26 18:12:52 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:12:52 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:75:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:13:03 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:13:03 [[31merror[39m]: Response data: 
+2026-04-26 18:13:03 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:13:03 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:75:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:14:49 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:14:49 [[31merror[39m]: Response data: 
+2026-04-26 18:14:49 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:14:49 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:84:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:14:55 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:14:55 [[31merror[39m]: Response data: 
+2026-04-26 18:14:55 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:14:55 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:84:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:15:06 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:15:06 [[31merror[39m]: Response data: 
+2026-04-26 18:15:06 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:15:06 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:84:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:16:47 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:16:47 [[31merror[39m]: Response data: 
+2026-04-26 18:16:47 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:16:47 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:93:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:16:53 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:16:53 [[31merror[39m]: Response data: 
+2026-04-26 18:16:53 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:16:53 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:93:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:17:05 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:17:05 [[31merror[39m]: Response data: 
+2026-04-26 18:17:05 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:17:05 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:93:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:18:57 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:18:57 [[31merror[39m]: Response data: 
+2026-04-26 18:18:57 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:18:57 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:96:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:19:03 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:19:03 [[31merror[39m]: Response data: 
+2026-04-26 18:19:03 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:19:03 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:96:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:19:14 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:19:14 [[31merror[39m]: Response data: 
+2026-04-26 18:19:14 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:19:14 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:96:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:38:01 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:38:01 [[31merror[39m]: Response data: 
+2026-04-26 18:38:01 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:38:01 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:96:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:38:12 [[31merror[39m]: File download failed with status 401
+2026-04-26 18:38:12 [[31merror[39m]: Response data: 
+2026-04-26 18:38:12 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:38:12 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:96:30)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:166:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:47:19 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:47:19 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:47:25 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:47:25 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:47:36 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:47:36 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:51:37 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:51:37 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:51:43 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:51:43 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:51:54 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:51:54 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:58:00 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:58:00 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:58:06 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:58:06 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 18:58:17 [[31merror[39m]: File processing error: Request failed with status code 401
+2026-04-26 18:58:17 [[31merror[39m]: AxiosError: Request failed with status code 401
+    at settle (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/settle.js:19:12)
+    at IncomingMessage.handleStreamEnd (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/adapters/http.js:798:11)
+    at IncomingMessage.emit (node:events:520:35)
+    at endReadableNT (node:internal/streams/readable:1729:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+    at Axios.request (file:///D:/coding/project/chat-bot/rag-model/node_modules/axios/lib/core/Axios.js:46:41)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async processFile (file:///D:/coding/project/chat-bot/rag-model/src/utils/fileProcessor.js:23:24)
+    at async processFileAndUpsert (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:150:19)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:111:16
+2026-04-26 23:16:45 [[31merror[39m]: ApiError: {"error":{"code":404,"message":"models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.","status":"NOT_FOUND"}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:400:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:20
+2026-04-26 23:21:06 [[31merror[39m]: ApiError: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 53.513573334s.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"53s"}]}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:400:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:20
+2026-04-26 23:22:43 [[31merror[39m]: ApiError: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\nPlease retry in 16.976990532s.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.0-flash","location":"global"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerMinutePerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}},{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_input_token_count","quotaId":"GenerateContentInputTokensPerModelPerMinute-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.0-flash"}}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"16s"}]}}
+    at throwErrorIfNotOK (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:12172:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+    at async file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:11892:13
+    at async Models.generateContent (file:///D:/coding/project/chat-bot/rag-model/node_modules/@google/genai/dist/node/index.mjs:13235:24)
+    at async generateResponse (file:///D:/coding/project/chat-bot/rag-model/src/services/rag.service.js:400:20)
+    at async file:///D:/coding/project/chat-bot/rag-model/src/index.js:152:20
